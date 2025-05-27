@@ -4,120 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Coloring Pages</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 10px;
-      background: #f9f9f9;
+      font-family: 'Fredoka', sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 40px 20px;
       color: #333;
     }
+
     h1 {
       text-align: center;
+      font-size: 2.5em;
       margin-bottom: 40px;
       color: #2c3e50;
     }
-    .product {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 30px;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
       display: flex;
-      align-items: center;
-      gap: 20px;
+      flex-direction: column;
+      transition: transform 0.2s ease;
     }
-    .product img {
-      max-width: 180px;
-      border-radius: 6px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+    .card:hover {
+      transform: translateY(-5px);
     }
-    .product-details {
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
       flex: 1;
     }
-    .product-details h2 {
-      margin: 0 0 10px 0;
+
+    .card h2 {
       font-size: 1.3em;
+      margin: 0 0 10px 0;
       color: #34495e;
     }
-    .product-details p {
-      margin: 0 0 15px 0;
-      line-height: 1.4;
-      color: #555;
+
+    .card p {
+      flex: 1;
+      font-size: 0.95em;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 20px;
     }
+
     .buy-button {
-      display: inline-block;
-      padding: 10px 18px;
-      background-color: #27ae60;
+      align-self: flex-start;
+      padding: 10px 16px;
+      background: #27ae60;
       color: white;
-      font-weight: bold;
-      border-radius: 6px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
     }
+
     .buy-button:hover {
-      background-color: #219150;
+      background: #1f8a4c;
     }
   </style>
 </head>
 <body>
   <h1>Coloring Pages</h1>
+  <div class="grid">
 
-  <div class="product">
-    <img src="images/fcw8kne.jpg" alt="Coloring page" />
-    <div class="product-details">
-      <h2>Coloring page</h2>
-      <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-      <a href="https://boacaed.gumroad.com/l/gnvyn" target="_blank" class="buy-button">Buy Now</a>
+    <div class="card">
+      <img src="images/1-Fcw8knE.jpg" alt="Coloring page">
+      <div class="card-body">
+        <h2>Coloring page</h2>
+        <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
+        <a href="https://boacaed.gumroad.com/l/gnvyn" target="_blank" class="buy-button">Buy Now</a>
+      </div>
     </div>
-  </div>
 
-  <div class="product">
-    <img src="images/c3jtefo.png" alt="Coloring page" />
-    <div class="product-details">
-      <h2>Coloring page</h2>
-      <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-      <a href="https://boacaed.gumroad.com/l/airbu" target="_blank" class="buy-button">Buy Now</a>
+    <div class="card">
+      <img src="images/2-C3JTefO.png" alt="Coloring page">
+      <div class="card-body">
+        <h2>Coloring page</h2>
+        <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
+        <a href="https://boacaed.gumroad.com/l/airbu" target="_blank" class="buy-button">Buy Now</a>
+      </div>
     </div>
-  </div>
 
-  <div class="product">
-    <img src="images/ul3afcz.png" alt="Coloring page" />
-    <div class="product-details">
-      <h2>Coloring page</h2>
-      <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-      <a href="https://boacaed.gumroad.com/l/isjla" target="_blank" class="buy-button">Buy Now</a>
-    </div>
-  </div>
-
-  <div class="product">
-    <img src="images/j5iwxgc.png" alt="Coloring page" />
-    <div class="product-details">
-      <h2>Coloring page</h2>
-      <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-      <a href="https://boacaed.gumroad.com/l/qhwtla" target="_blank" class="buy-button">Buy Now</a>
-    </div>
-  </div>
-
-  <div class="product">
-    <img src="images/y48cqjs.png" alt="Coloring page" />
-    <div class="product-details">
-      <h2>Coloring page</h2>
-      <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-      <a href="https://boacaed.gumroad.com/l/arvpct" target="_blank" class="buy-button">Buy Now</a>
-    </div>
-  </div>
-
-  <div class="product">
-    <img src="images/sv1kppa.png" alt="Coloring page" />
-    <div class="product-details">
-      <h2>Coloring page</h2>
-      <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-      <a href="https://boacaed.gumroad.com/l/bkthlx" target="_blank" class="buy-button">Buy Now</a>
-    </div>
-  </div>
-
-</body>
-</html>
+    <div class="card">
+      <img src="images/3-uL3aFCZ.png" alt="Coloring page">
+      <div class="card-body">
+        <h2>Coloring page</h2>
+        <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
+        <a href="https://boacaed.gumroad.com/l/isjla" target="_blank" class="buy-button">Buy Now</a>
+     
 
