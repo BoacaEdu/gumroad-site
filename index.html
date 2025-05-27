@@ -8,104 +8,149 @@
     body {
       font-family: Arial, sans-serif;
       max-width: 900px;
-      margin: 0 auto;
+      margin: 40px auto;
       padding: 20px;
       background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
     .product {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 15px;
-      margin-bottom: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
       display: flex;
-      align-items: center;
-      gap: 20px;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.15);
     }
     .product img {
-      width: 150px;
+      width: 100%;
       height: auto;
-      border-radius: 4px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      display: block;
+      object-fit: cover;
     }
-    .product-details {
-      max-width: 700px;
+    .product-content {
+      padding: 15px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
     }
     .product-title {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: bold;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      color: #222;
     }
     .product-desc {
+      font-size: 0.95em;
+      line-height: 1.4;
       color: #555;
+      flex-grow: 1;
+      margin-bottom: 15px;
+    }
+    .buy-button {
+      background-color: #ff5a5f;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .buy-button:hover {
+      background-color: #e0484a;
     }
   </style>
 </head>
 <body>
   <h1>Coloring Pages</h1>
+  <div class="products-container">
 
-  <div class="product">
-    <img src="images/0czELg9.png" alt="Coloring page" />
-    <div class="product-details">
-      <div class="product-title">Coloring page</div>
-      <div class="product-desc">
-        This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+    <div class="product">
+      <img src="images/Fcw8knE.jpg" alt="Coloring page" />
+      <div class="product-content">
+        <div class="product-title">Coloring page</div>
+        <div class="product-desc">
+          This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+        </div>
+        <a class="buy-button" href="https://boacaed.gumroad.com/l/gnvyn" target="_blank" rel="noopener noreferrer">Buy Now</a>
       </div>
     </div>
-  </div>
 
-  <div class="product">
-    <img src="images/airbu.png" alt="Coloring page" />
-    <div class="product-details">
-      <div class="product-title">Coloring page</div>
-      <div class="product-desc">
-        This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+    <div class="product">
+      <img src="images/C3JTefO.png" alt="Coloring page" />
+      <div class="product-content">
+        <div class="product-title">Coloring page</div>
+        <div class="product-desc">
+          This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+        </div>
+        <a class="buy-button" href="https://boacaed.gumroad.com/l/airbu" target="_blank" rel="noopener noreferrer">Buy Now</a>
       </div>
     </div>
-  </div>
 
-  <div class="product">
-    <img src="images/isjla.png" alt="Coloring page" />
-    <div class="product-details">
-      <div class="product-title">Coloring page</div>
-      <div class="product-desc">
-        This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+    <div class="product">
+      <img src="images/uL3aFCZ.png" alt="Coloring page" />
+      <div class="product-content">
+        <div class="product-title">Coloring page</div>
+        <div class="product-desc">
+          This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+        </div>
+        <a class="buy-button" href="https://boacaed.gumroad.com/l/isjla" target="_blank" rel="noopener noreferrer">Buy Now</a>
       </div>
     </div>
-  </div>
 
-  <div class="product">
-    <img src="images/qhwtla.png" alt="Coloring page" />
-    <div class="product-details">
-      <div class="product-title">Coloring page</div>
-      <div class="product-desc">
-        This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+    <div class="product">
+      <img src="images/J5IWxgc.png" alt="Coloring page" />
+      <div class="product-content">
+        <div class="product-title">Coloring page</div>
+        <div class="product-desc">
+          This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+        </div>
+        <a class="buy-button" href="https://boacaed.gumroad.com/l/qhwtla" target="_blank" rel="noopener noreferrer">Buy Now</a>
       </div>
     </div>
-  </div>
 
-  <div class="product">
-    <img src="images/arvpct.png" alt="Coloring page" />
-    <div class="product-details">
-      <div class="product-title">Coloring page</div>
-      <div class="product-desc">
-        This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+    <div class="product">
+      <img src="images/y48CQjS.png" alt="Coloring page" />
+      <div class="product-content">
+        <div class="product-title">Coloring page</div>
+        <div class="product-desc">
+          This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+        </div>
+        <a class="buy-button" href="https://boacaed.gumroad.com/l/arvpct" target="_blank" rel="noopener noreferrer">Buy Now</a>
       </div>
     </div>
-  </div>
 
-  <div class="product">
-    <img src="images/bkthlx.png" alt="Coloring page" />
-    <div class="product-details">
-      <div class="product-title">Coloring page</div>
-      <div class="product-desc">
-        This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+    <div class="product">
+      <img src="images/sv1kpPa.png" alt="Coloring page" />
+      <div class="product-content">
+        <div class="product-title">Coloring page</div>
+        <div class="product-desc">
+          This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!
+        </div>
+        <a class="buy-button" href="https://boacaed.gumroad.com/l/bkthlx" target="_blank" rel="noopener noreferrer">Buy Now</a>
       </div>
     </div>
-  </div>
 
+  </div>
 </body>
 </html>
+
 
 
 
