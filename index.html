@@ -1,118 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coloring Pages</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Fredoka', sans-serif;
-      background: #fdfdfd;
-      margin: 0;
-      padding: 40px 20px;
-      color: #333;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 40px;
-      color: #2c3e50;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .card-body {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .card h2 {
-      font-size: 1.3em;
-      margin: 0 0 10px 0;
-      color: #34495e;
-    }
-
-    .card p {
-      flex: 1;
-      font-size: 0.95em;
-      color: #666;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
-    .buy-button {
-      align-self: flex-start;
-      padding: 10px 16px;
-      background: #27ae60;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .buy-button:hover {
-      background: #1f8a4c;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desene Vesele</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Coloring Pages</h1>
-  <div class="grid">
+<body class="bg-pink-50 text-gray-800 font-sans">
 
-    <div class="card">
-      <img src="images/1-Fcw8knE.jpg" alt="Coloring page">
-      <div class="card-body">
-        <h2>Coloring page</h2>
-        <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-        <a href="https://boacaed.gumroad.com/l/gnvyn" target="_blank" class="buy-button">Buy Now</a>
+  <!-- Header -->
+  <header class="bg-yellow-300 p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-pink-600">🎨 Desene Vesele</h1>
+    <nav class="space-x-4">
+      <a href="#galerie" class="text-lg hover:text-pink-500">Galerie</a>
+      <a href="#despre" class="text-lg hover:text-pink-500">Despre</a>
+      <a href="#contact" class="text-lg hover:text-pink-500">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-10 bg-gradient-to-r from-pink-100 to-yellow-100">
+    <h2 class="text-3xl font-bold mb-2">Desene pentru copii fericiți!</h2>
+    <p class="text-lg text-gray-700">Descoperă colecția noastră de ilustrații colorate și prietenoase.</p>
+    <a href="#galerie" class="mt-4 inline-block bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600">Vezi galeria</a>
+  </section>
+
+  <!-- Galerie -->
+  <section id="galerie" class="p-10">
+    <h3 class="text-2xl font-bold text-center mb-6">🎨 Galeria de Desene</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Exemplu de produs -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+        <img src="https://via.placeholder.com/300x200.png?text=Desen+1" alt="Desen 1" class="rounded mb-2" />
+        <h4 class="text-lg font-semibold">Desen cu unicorn</h4>
+        <p class="text-sm text-gray-600">Unicorn magic colorat manual.</p>
+        <button class="mt-2 bg-yellow-400 px-4 py-2 rounded hover:bg-yellow-500">Adaugă în coș</button>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="images/2-C3JTefO.png" alt="Coloring page">
-      <div class="card-body">
-        <h2>Coloring page</h2>
-        <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-        <a href="https://boacaed.gumroad.com/l/airbu" target="_blank" class="buy-button">Buy Now</a>
-      </div>
-    </div>
+      <!-- Poți repeta blocul de mai sus pentru alte produse -->
 
-    <div class="card">
-      <img src="images/3-uL3aFCZ.png" alt="Coloring page">
-      <div class="card-body">
-        <h2>Coloring page</h2>
-        <p>This cute cartoon-style car coloring page is perfect for toddlers and preschool kids. Ideal for home activities, early learning, or classroom fun. Instant digital download – print and color right away!</p>
-        <a href="https://boacaed.gumroad.com/l/isjla" target="_blank" class="buy-button">Buy Now</a>
-     
+    </div>
+  </section>
+
+  <!-- Despre -->
+  <section id="despre" class="bg-white p-10">
+    <h3 class="text-2xl font-bold text-center mb-4">👩‍🎨 Despre Noi</h3>
+    <p class="max-w-2xl mx-auto text-center text-gray-700">
+      Suntem o echipă de artiști pasionați care creează desene pentru copii cu zâmbete. Fiecare lucrare este originală și pregătită cu grijă pentru a aduce bucurie celor mici!
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-pink-100 p-10">
+    <h3 class="text-2xl font-bold text-center mb-4">📬 Contact</h3>
+    <form class="max-w-md mx-auto space-y-4">
+      <input type="text" placeholder="Nume" class="w-full p-2 border rounded" />
+      <input type="email" placeholder="Email" class="w-full p-2 border rounded" />
+      <textarea placeholder="Mesajul tău..." class="w-full p-2 border rounded"></textarea>
+      <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">Trimite</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-300 p-4 text-center">
+    &copy; 2025 Desene Vesele. Toate drepturile rezervate.
+  </footer>
+
+</body>
+</html>
 
